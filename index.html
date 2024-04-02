@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@413&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | QR code component</title>
 
@@ -35,6 +41,7 @@
 
       .card h2 {
         color: hsl(218, 44%, 22%);
+        font-size: 21px;
         font-weight: 700;
       }
 
@@ -48,9 +55,8 @@
         padding: 15px;
       }
 
-      .content h1,
-      p {
-        padding: 10px;
+      .card-text {
+        padding-inline: 25px;
       }
 
       #img-qr-code {
@@ -71,11 +77,13 @@
       <div class="card">
         <div class="content">
           <img src="images/image-qr-code.png" id="img-qr-code" />
-          <h2>Improve your front-end skills by building projects</h2>
-          <p>
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level
-          </p>
+          <div class="card-text">
+            <h2>Improve your front-end skills by building projects</h2>
+            <p>
+              Scan the QR code to visit Frontend Mentor and take your coding
+              skills to the next level
+            </p>
+          </div>
         </div>
       </div>
     </div>
